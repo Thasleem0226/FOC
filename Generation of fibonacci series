@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int x, i, t1 = 1, t2 = 2, nt;
+    printf("Enter the number of terms to generate the fibonacci series::\n");
+    scanf("%d", &x);
+    printf("Fibonacci Series:: ");
+    for (i = 1; i <= x; ++i) {
+        printf("%d, ", t1);
+        nt = t1 + t2;
+        t1 = t2;
+        t2 = nt;
+    }
+    printf("\n");
+    return 0;
+}
